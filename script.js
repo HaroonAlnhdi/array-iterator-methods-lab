@@ -276,6 +276,7 @@
         
        
                 
+
         // Array.prototype.reduce()
 
         // Bonus 1. Calculate the Combined Lifespan of Inventors Using Array.prototype.reduce()
@@ -293,11 +294,14 @@
 
         // Enter your solution code here:
 
-
+        totalYearsLived = inventors.reduce((total, inventor) => {
+            total += (inventor.passed - inventor.year)
+            return total ;
+        }, 0);
 
         // Check your return value:
         console.log('Bonus 1 My Result: ', totalYearsLived)
-        console.log('Bonus 1 Correct Result: ', 861)
+       
 
 
 
@@ -313,12 +317,12 @@
         // - Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
 
 
-        let travelMethodCounts = {}
+        // let travelMethodCounts = {}
 
-        // Enter your solution code here:
+        // // Enter your solution code here:
 
 
 
-        // Check your return value:
-        console.log('Bonus 2 My Result: ', travelMethodCounts)
-        console.log('Bonus 2 Correct Result: ', { car: 5, truck: 3, bike: 2, walk: 2, van: 2 })
+        // // Check your return value:
+        // console.log('Bonus 2 My Result: ', travelMethodCounts)
+        // console.log('Bonus 2 Correct Result: ', { car: 5, truck: 3, bike: 2, walk: 2, van: 2 })
